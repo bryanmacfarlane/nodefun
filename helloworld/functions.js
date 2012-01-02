@@ -16,5 +16,15 @@ function execute(func, value)
     func(value);
 }
 
+// pass a function name
 execute(say, "Hello");
+
+// pass a function definition
+execute(
+    function(word)
+    {
+        console.log(word);
+    },
+    "World!"
+);
 
