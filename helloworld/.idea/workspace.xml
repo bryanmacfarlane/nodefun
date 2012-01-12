@@ -34,7 +34,7 @@
       <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="22" selection-start="717" selection-end="717" vertical-scroll-proportion="0.7653061">
+            <state line="30" column="22" selection-start="661" selection-end="661" vertical-scroll-proportion="0.23469388">
               <folding />
             </state>
           </provider>
@@ -296,7 +296,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="717" selection-end="717" vertical-scroll-proportion="0.7653061">
+        <state line="30" column="22" selection-start="661" selection-end="661" vertical-scroll-proportion="0.23469388">
           <folding />
         </state>
       </provider>

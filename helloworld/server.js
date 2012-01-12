@@ -9,6 +9,9 @@
 // create the http module
 // best practice to name variable the same as module
 var http = require("http");
+var url = require("url");
+var querystring = require("querystring");
+
 console.log("http module created.");
 
 function start()
@@ -17,8 +20,27 @@ function start()
 
     function onRequest(request, response)
     {
-        // will print twice because of request for favicon.ico
+        console.log("================================");
+
         console.log("request received: " + request.url);
+
+        // path
+        var pathName = url.parse(request.url).pathname;
+        console.log("path name: " + pathName);
+
+        // querystring
+        var qs = url.parse(request.url).query;
+        if (qs != undefined)
+        {
+            console.log("querystring: " + qs);
+
+            // requires querystring module
+            var qsTable = querystring.parse(qs);
+            console.log("querystring[]: " + qs);
+            console.log("foo val: " + qsTable["foo"]);
+        }
+
+        // write output
         response.writeHead(200, {"Content-Type": "text/plain"});
         response.write("Hello World!");
         response.end();
