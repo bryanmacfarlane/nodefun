@@ -14,17 +14,17 @@ console.log("http module created.");
 function start()
 {
     console.log("server::start");
-    var server = http.createServer
-        (
-            function(request, response)
-            {
-                // will print twice because of request for favicon.ico
-                console.log("request received: " + request.url);
-                response.writeHead(200, {"Content-Type": "text/plain"});
-                response.write("Hello World!");
-                response.end();
-            }
-        );
+
+    function onRequest(request, response)
+    {
+        // will print twice because of request for favicon.ico
+        console.log("request received: " + request.url);
+        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.write("Hello World!");
+        response.end();
+    }
+
+    var server = http.createServer(onRequest);
     console.log("server created.");
 
     var port = 8888;
