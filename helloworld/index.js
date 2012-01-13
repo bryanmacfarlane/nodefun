@@ -17,5 +17,8 @@ var handle = {};
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
+handle["/ls"] = requestHandlers.ls;
+
+handle["errorNotFound"] = requestHandlers.errorNotFound;
 
 server.start(router.route, handle);

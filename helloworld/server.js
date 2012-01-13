@@ -41,12 +41,7 @@ function start(route, handle)
         }
 
         // route request - pass the response so the handlers can respond
-        var contents = route(handle, pathName, response);
-
-        // write output
-        response.writeHead(200, {"Content-Type": "text/plain"});
-        response.write(contents);
-        response.end();
+        route(handle, pathName, response);
     }
 
     var server = http.createServer(onRequest);
