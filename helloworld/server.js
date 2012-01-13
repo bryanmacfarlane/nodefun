@@ -14,7 +14,7 @@ var querystring = require("querystring");
 
 console.log("http module created.");
 
-function start(route)
+function start(route, handle)
 {
     console.log("server::start");
 
@@ -40,12 +40,12 @@ function start(route)
             console.log("foo val: " + qsTable["foo"]);
         }
 
-        // route request
-        route(pathName);
+        // route request - pass the response so the handlers can respond
+        var contents = route(handle, pathName, response);
 
         // write output
         response.writeHead(200, {"Content-Type": "text/plain"});
-        response.write("Hello World!");
+        response.write(contents);
         response.end();
     }
 
