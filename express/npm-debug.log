@@ -1,0 +1,23 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-d' ]
+info using npm@1.1.0-beta-4
+info using node@v0.6.6
+verbose config file /Users/bryan/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+ERR! Couldn't read dependencies.
+ERR! Error: ENOENT, no such file or directory '/Users/bryan/Study/nodejs/express/package.json'
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "install" "-d"
+ERR! cwd /Users/bryan/Study/nodejs/express
+ERR! node -v v0.6.6
+ERR! npm -v 1.1.0-beta-4
+ERR! path /Users/bryan/Study/nodejs/express/package.json
+ERR! code ENOENT
+ERR! message ENOENT, no such file or directory '/Users/bryan/Study/nodejs/express/package.json'
+verbose exit [ 1, true ]
