@@ -43,7 +43,7 @@
       <file leaf-file-name="google.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/routes/google.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#72#0" expanded="false" />
               </folding>
@@ -78,11 +78,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpget.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="httpget.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.22350994">
+            <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="students.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/helloworld/services/students.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.4718543">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +128,7 @@
         <option value="$PROJECT_DIR$/helloworld/httpget.js" />
         <option value="$PROJECT_DIR$/helloworld/routes/google.js" />
         <option value="$PROJECT_DIR$/helloworld/hellorest.js" />
+        <option value="$PROJECT_DIR$/helloworld/services/students.js" />
       </list>
     </option>
   </component>
@@ -176,6 +188,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="helloworld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,15 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/routes/google.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#72#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/hellorest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="57" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
@@ -410,8 +431,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.22350994">
+        <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/routes/google.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#72#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/services/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.4718543">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
