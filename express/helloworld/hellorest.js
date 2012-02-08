@@ -11,6 +11,7 @@
 //
 var express = require('express');
 var app = express.createServer();
+var google = require('./routes/google.js');
 
 //
 // Configure
@@ -116,7 +117,12 @@ app.get('/users',
 
 app.post('/submit', function(req, res){
     res.send(req.body);
+
+    // grab individual form fields
+    // res.send('firstName is ' + req.body['firstName']);
 });
+
+app.get('/google', google.getHome);
 
 //
 // Start
