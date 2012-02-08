@@ -122,6 +122,7 @@ app.post('/submit', function(req, res){
     // res.send('firstName is ' + req.body['firstName']);
 });
 
+// map an export
 app.get('/google', google.getHome);
 
 //

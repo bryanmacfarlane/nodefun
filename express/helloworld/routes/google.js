@@ -20,43 +20,23 @@ exports.getHome = function(req, res)
     //
     // On initial response
     //
-    var googleReq = http.request(options, function(googleResponse)
+    var gReq = http.request(options, function(gRes)
     {
-        console.log('STATUS: ' + googleResponse.statusCode);
-        console.log('HEADERS: ' + JSON.stringify(googleResponse.headers));
-        googleResponse.setEncoding('utf8');
+        console.log(options.host + ':' + gRes.statusCode);
+        gRes.setEncoding('utf8');
 
-        //
-        // On each chunk
-        //
-        googleResponse.on('data', function (chunk)
-        {
-            //googleReq.write(chunk);
+        gRes.on('data', function (chunk) {
             res.write(chunk);
-            console.log('\n\n===========CHUNK===============')
-            //console.log(chunk);
         });
 
-        //
-        // On End
-        //
-        googleResponse.on('end', function()
-        {
+        gRes.on('end', function() {
             res.end();
-            console.log('\n\n=========RESPONSE END===============');
         });
     });
 
-    //
-    // On Error
-    //
-    googleReq.on('error', function(e)
-    {
-        console.log('\n\n==========ERROR==============')
-        console.log('problem with request: ' + e.message);
+    gReq.on('error', function(err) {
+        res.send('error: ' + err.message);
     });
 
-    // write data to request body
-    console.log('\n\n=========REQUEST END===============');
-    googleReq.end();
+    gReq.end();
 };
