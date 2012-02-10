@@ -1,15 +1,15 @@
 /**
  *
- * Description here
+ * module to load google http request.  illustrates simple use of http get in a non-blocking manner.
  *
  * Created : bryan
  * Date    : 2/7/12
  */
 
+var http = require("http");
+
 exports.getHome = function(req, res)
 {
-    var http = require("http");
-
     var options = {
         host: 'www.google.com',
         port: 80,

@@ -22,31 +22,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloworld/app.js">
+      <file leaf-file-name="httpget.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="13" column="27" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloworld/routes/index.js">
+      <file leaf-file-name="students.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloworld/students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="46" column="29" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloworld/routes/google.js">
+      <file leaf-file-name="secrets.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/helloworld/service/secrets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#72#0" expanded="false" />
-              </folding>
+            <state line="8" column="66" selection-start="201" selection-end="201" vertical-scroll-proportion="0.1685254">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studentsvc.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloworld/service/studentsvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="2" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloworld/service/parse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="46" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,7 +70,7 @@
       <file leaf-file-name="helloworld.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/helloworld.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="100" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+            <state line="24" column="8" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,36 +88,16 @@
       <file leaf-file-name="hellorest.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/hellorest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="57" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+            <state line="82" column="31" selection-start="1874" selection-end="1887" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpget.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
+      <file leaf-file-name="rest.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helloworld/service/rest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="students.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/helloworld/services/students.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.4718543">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloworld/public/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="508" selection-end="508" vertical-scroll-proportion="-8.75">
+            <state line="27" column="12" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,21 +118,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/helloworld/helloworld.js" />
-        <option value="$PROJECT_DIR$/helloworld/helloconfig.js" />
-        <option value="$PROJECT_DIR$/helloworld/public/post.html" />
-        <option value="$PROJECT_DIR$/helloworld/httpget.js" />
-        <option value="$PROJECT_DIR$/helloworld/routes/google.js" />
         <option value="$PROJECT_DIR$/helloworld/hellorest.js" />
+        <option value="$PROJECT_DIR$/helloworld/routes/google.js" />
+        <option value="$PROJECT_DIR$/helloworld/parse/parse.js" />
         <option value="$PROJECT_DIR$/helloworld/services/students.js" />
+        <option value="$PROJECT_DIR$/helloworld/rest/studentsvc.js" />
+        <option value="$PROJECT_DIR$/helloworld/rest/secrets.js" />
+        <option value="$PROJECT_DIR$/helloworld/restler.js" />
+        <option value="$PROJECT_DIR$/helloworld/rest/parse.js" />
+        <option value="$PROJECT_DIR$/helloworld/rest/rest.js" />
+        <option value="$PROJECT_DIR$/helloworld/httpget.js" />
+        <option value="$PROJECT_DIR$/helloworld/test.js" />
+        <option value="$PROJECT_DIR$/helloworld/service/rest.js" />
+        <option value="$PROJECT_DIR$/helloworld/students.js" />
+        <option value="$PROJECT_DIR$/helloworld/service/studentsvc.js" />
+        <option value="$PROJECT_DIR$/helloworld/service/parse.js" />
+        <option value="$PROJECT_DIR$/helloworld/service/secrets.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
-    <option name="y" value="40" />
-    <option name="width" value="1360" />
-    <option name="height" value="1060" />
+    <option name="x" value="252" />
+    <option name="y" value="9" />
+    <option name="width" value="1281" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -205,25 +210,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloworld" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,6 +232,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -260,24 +265,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bryanmac\Projects\nodefun\express\helloworld\rest" />
       <recent name="$PROJECT_DIR$/helloworld" />
       <recent name="$PROJECT_DIR$/helloworld/public/images" />
     </key>
   </component>
   <component name="RunManager" selected="Node JS.app.js">
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" coffeescript-run="false">
       <method>
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node JS" path-to-node="/usr/local/bin/node" path-to-js-file="$PROJECT_DIR$/helloworld/app.js" working-dir="$PROJECT_DIR$/helloworld">
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node JS" path-to-node="/usr/local/bin/node" path-to-js-file="$PROJECT_DIR$/helloworld/app.js" working-dir="$PROJECT_DIR$/helloworld" coffeescript-run="false">
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
@@ -307,32 +313,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="6f236997-5fc7-4c02-8130-6e5d34dc90fd" name="Default" comment="" />
       <created>1328579841426</created>
       <updated>1328579841426</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="40" width="1360" height="1060" extended-state="0" />
+    <frame x="252" y="9" width="1281" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18623784" sideWeight="0.6705632" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1856" sideWeight="0.6706731" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -387,70 +394,98 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/helloworld/helloworld.js">
+    <entry file="file://$PROJECT_DIR$/helloworld/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="100" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/helloconfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="11" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/public/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="508" selection-end="508" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
+        <state line="21" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/app.js">
+    <entry file="file://$PROJECT_DIR$/helloworld/node_modules/express/lib/request.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/hellorest.js">
+    <entry file="file://$PROJECT_DIR$/helloworld/node_modules/express/lib/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="57" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="12" selection-start="151" selection-end="151" vertical-scroll-proportion="0.2173913" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
+    <entry file="file://$PROJECT_DIR$/helloworld/public/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+        <state line="14" column="19" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/routes/google.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#72#0" expanded="false" />
-          </folding>
+        <state line="12" column="0" selection-start="223" selection-end="340" vertical-scroll-proportion="0.2527881">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/services/students.js">
+    <entry file="file://$PROJECT_DIR$/helloworld/httpget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="377" selection-end="377" vertical-scroll-proportion="0.4718543">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="13" column="27" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/helloworld.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/helloconfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="11" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/hellorest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="31" selection-start="1874" selection-end="1887" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="29" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/service/parse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="46" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/service/rest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/service/studentsvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="2" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/service/secrets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="66" selection-start="201" selection-end="201" vertical-scroll-proportion="0.1685254">
+          <folding />
         </state>
       </provider>
     </entry>
