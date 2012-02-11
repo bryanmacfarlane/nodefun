@@ -15,14 +15,12 @@ exports.initialize = function(appId, restAPIKey)
     _restAPIKey = restAPIKey;
 }
 
-exports.query = function(className, onResults)
+var getParseOptions = function()
 {
-    console.log("parse::query");
-
     var options = {
         host: 'api.parse.com',
         port: 443,
-        path: '/1/classes/Student',
+        path: '',
         method: 'GET',
         headers: {
             'X-Parse-Application-Id': _appId,
@@ -30,6 +28,16 @@ exports.query = function(className, onResults)
             'Content-Type': 'application/json'
         }
     };
+
+    return options;
+}
+
+exports.query = function(className, onResults)
+{
+    console.log("parse::query");
+
+    var options = getParseOptions();
+    options.path = '/1/classes/Student';
 
     console.log(options);
     rest.getJSON(options, onResults);
@@ -39,19 +47,38 @@ exports.retrieve = function(className, itemId, onResults)
 {
     console.log("parse::query");
 
-    var options = {
-        host: 'api.parse.com',
-        port: 443,
-        path: '/1/classes/Student/' + itemId,
-        method: 'GET',
-        headers: {
-            'X-Parse-Application-Id': _appId,
-            'X-Parse-REST-API-Key': _restAPIKey,
-            'Content-Type': 'application/json'
-        }
-    };
+    var options = getParseOptions();
+    options.path = '/1/classes/Student/' + itemId;
 
     console.log(options);
     rest.getJSON(options, onResults);
+};
+
+exports.create = function(className, item, onResults)
+{
+    console.log("parse::create");
+
+    var options = getParseOptions();
+    options.method = 'POST';
+    options.path = '/1/classes/Student';
+
+    console.log(options);
+    console.log('data:');
+    console.log(item);
+    rest.postJSON(options, item, onResults);
+};
+
+exports.delete = function(className, itemId, onResults)
+{
+    console.log("parse::delete");
+
+    var options = getParseOptions();
+    options.method = 'DELETE';
+    options.path = '/1/classes/Student/' + itemId;
+
+    console.log(options);
+    console.log('data:');
+    console.log(itemId);
+    rest.deleteJSON(options, itemId, onResults);
 };
 
