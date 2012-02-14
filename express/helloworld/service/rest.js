@@ -8,6 +8,11 @@
 var http = require("http");
 var https = require("https");
 
+/**
+ * getJSON:  REST get request returning JSON object(s)
+ * @param options: http options object
+ * @param callback: callback to pass the results JSON object(s) back
+ */
 exports.getJSON = function(options, callback)
 {
     console.log("rest::getJSON");
@@ -36,6 +41,12 @@ exports.getJSON = function(options, callback)
     req.end();
 };
 
+/**
+ * postJSON: post a JSON object to a REST service
+ *
+ * @param options
+ * @param callback: callback to pass the results JSON object(s) back
+ */
 exports.postJSON = function(options, callback)
 {
     console.log("rest::postJSON");
@@ -64,6 +75,13 @@ exports.postJSON = function(options, callback)
     req.end();
 };
 
+/**
+ * deleteJSON: send a delete REST request with an id to delete
+ *
+ * @param options: http server options object
+ * @param itemId: item id to delete
+ * @param callback: callback to pass the results JSON object(s) back
+ */
 exports.deleteJSON = function(options, itemId, callback)
 {
     console.log("rest::deleteJSON");

@@ -5,15 +5,16 @@
  * Date: 2/9/12
  */
 
-//
-// Create express server
-//
+/**
+ * Create express server
+ */
 var express = require('express');
 var app = express.createServer();
 
-//
-// Configure
-//
+/**
+ * Configure
+ * $ NODE_ENV=production node helloconfig.js
+ */
 app.configure(function()
 {
     app.use(express.methodOverride());
@@ -23,7 +24,6 @@ app.configure(function()
     app.set('view engine', 'jade');
 });
 
-// $ NODE_ENV=production node helloconfig.js
 app.configure('development', function()
 {
     app.use(express.static(__dirname + '/public'));
@@ -37,17 +37,17 @@ app.configure('production', function()
     app.use(express.errorHandler());
 });
 
-//
-// REST URL Mappings
-//
+/**
+ * REST URL Mappings
+ */
 var studentsSvc = require('./service/studentsvc.js');
 app.get('/service/students', studentsSvc.queryStudents);
 app.get('/service/students/:id?', studentsSvc.getStudent);
 app.post('/service/students', studentsSvc.createStudent);
 app.delete('/service/students/:id', studentsSvc.deleteStudent);
 
-//
-// Start
-//
+/**
+ * Start the application server
+ */
 app.listen(3333);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

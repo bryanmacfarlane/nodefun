@@ -8,9 +8,18 @@
 var parse = require('./parse.js');
 var secrets = require("./secrets.js");
 
+/**
+ * Initialize the parse API with out secrets.  Separated secrets into separate file for purposes of demo
+ */
 parse.initialize(secrets.getParseAppId(),
                  secrets.getParseAPIKey());
 
+/**
+ * Get a list of all students (no filter)
+ *
+ * @param   req: the http server request object
+ * @param   res: the http server response object
+ */
 exports.queryStudents = function(req, res)
 {
     parse.query("students",
@@ -21,6 +30,13 @@ exports.queryStudents = function(req, res)
         });
 };
 
+/**
+ * Get a specific student by id
+ *
+ * @id      id of student to get (req.params.id)
+ * @param   req: the http server request object
+ * @param   res: the http server response object
+ */
 exports.getStudent = function(req, res, next)
 {
     console.log('studentsSvc::getStudent');
@@ -41,6 +57,13 @@ exports.getStudent = function(req, res, next)
     }
 }
 
+/**
+ * Create a student.
+ *
+ * @body    contains the student json object to create
+ * @param   req: the http server request object
+ * @param   res: the http server response object
+ */
 exports.createStudent = function(req, res)
 {
     console.log("studentSvc::createStudent");
@@ -59,7 +82,13 @@ exports.createStudent = function(req, res)
     // res.send('firstName is ' + req.body['firstName']);
 };
 
-//  curl -X DELETE -H "Content-Type: application/json" http://bryandev.local:3333/service/students/1gCfbaK83P
+/**
+ * Delete a specific student by id
+ *
+ * @id      id of student to get (req.params.id)
+ * @param   req: the http server request object
+ * @param   res: the http server response object
+ */
 exports.deleteStudent = function(req, res)
 {
     console.log('studentSvc::deleteStudent');

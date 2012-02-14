@@ -9,12 +9,23 @@ var rest = require("./rest.js");
 
 var _appId = '';
 var _restAPIKey = '';
+
+/**
+ * initialize parse with secrets (your appId and restAPIKey)
+ *
+ * @param appId:  Application Id from Parse
+ * @param restAPIKey:  REST API Key from Parse
+ */
 exports.initialize = function(appId, restAPIKey)
 {
     _appId = appId;
     _restAPIKey = restAPIKey;
 }
 
+/**
+ * Convenience function to create http options for parse.
+ * This sets up the url, port and headers while expecting callers to set path and method
+ */
 var getParseOptions = function()
 {
     var options = {
@@ -32,6 +43,11 @@ var getParseOptions = function()
     return options;
 }
 
+/**
+ * Parse Query:  Querys objects of a className.
+ * @param className
+ * @param onResults: callback function for results
+ */
 exports.query = function(className, onResults)
 {
     console.log("parse::query");
@@ -43,6 +59,12 @@ exports.query = function(className, onResults)
     rest.getJSON(options, onResults);
 };
 
+/**
+ * Parse Retrieve:  Retrieve an object by id.
+ * @param className
+ * @param itemId to retrieve
+ * @param onResults: callback function for results
+ */
 exports.retrieve = function(className, itemId, onResults)
 {
     console.log("parse::query");
@@ -54,6 +76,12 @@ exports.retrieve = function(className, itemId, onResults)
     rest.getJSON(options, onResults);
 };
 
+/**
+ * Parse Create:  Creates an object
+ * @param className
+ * @param item to create
+ * @param onResults: callback function for results
+ */
 exports.create = function(className, item, onResults)
 {
     console.log("parse::create");
@@ -68,6 +96,12 @@ exports.create = function(className, item, onResults)
     rest.postJSON(options, item, onResults);
 };
 
+/**
+ * Parse Delete:  Deletes an object by id
+ * @param className
+ * @param itemId to delete
+ * @param onResults: callback function for results
+ */
 exports.delete = function(className, itemId, onResults)
 {
     console.log("parse::delete");
