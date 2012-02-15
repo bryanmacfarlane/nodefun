@@ -7,14 +7,42 @@
 <body>
 
 <script src="frameworks/jquery-1.7.1.js"></script>
+<script src="common/validator.js"></script>
 <script>
     $(function(){
-          // hide error labels on load
-          $('.error').hide();
+        // hide error labels on load
+        $('.error').hide();
 
-          $(".button").click(function(){
-                alert('pressed');
-          });
+        $(".button").click(function(){
+            var clientValidation = true;
+
+            if (clientValidation)
+            {
+                // form submit - validate
+                $('.error').hide();
+
+                // name
+                var name = $("input#name").val();
+                if (!validator.isNameValid(name))
+                {
+                    $("label#name_error").show();
+                    $("input#name").focus();
+                    return false;
+                }
+
+                // grade
+                var grade = $("input#grade").val();
+                if (!validator.isGradeValid(grade))
+                {
+                    $("label#grade_error").show();
+                    $("input#grade").focus();
+                    return false;
+                }
+            }
+
+            alert('posted');
+            return false;
+        });
       })
 </script>
 

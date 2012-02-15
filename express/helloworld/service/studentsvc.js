@@ -22,10 +22,18 @@ parse.initialize(secrets.getParseAppId(),
  */
 exports.queryStudents = function(req, res)
 {
+    console.log('\nstudentsSvc::queryStudents');
     parse.query("students",
         function(result)
         {
-            console.log("onResult: " + JSON.stringify(result));
+            // The service will need the full objects for processing in the service
+            for (index in result.results)
+            {
+                var student = result.results[index];
+                console.log('student: ' + student.name);
+            }
+
+            //console.log("onResult: " + JSON.stringify(result));
             res.send(result);
         });
 };
@@ -39,7 +47,7 @@ exports.queryStudents = function(req, res)
  */
 exports.getStudent = function(req, res, next)
 {
-    console.log('studentsSvc::getStudent');
+    console.log('\nstudentsSvc::getStudent');
     var id = req.params.id;
     if (id)
     {
@@ -66,7 +74,7 @@ exports.getStudent = function(req, res, next)
  */
 exports.createStudent = function(req, res)
 {
-    console.log("studentSvc::createStudent");
+    console.log("\nstudentSvc::createStudent");
     var student = req.body;
     console.log("created");
     console.log('studentSvc::createStudent: ' + JSON.stringify(student));
@@ -91,7 +99,7 @@ exports.createStudent = function(req, res)
  */
 exports.deleteStudent = function(req, res)
 {
-    console.log('studentSvc::deleteStudent');
+    console.log('\nstudentSvc::deleteStudent');
     var id = req.params.id;
 
     console.log('studentSvc::deleteStudent - ' + id);

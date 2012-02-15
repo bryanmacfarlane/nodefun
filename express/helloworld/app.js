@@ -46,6 +46,14 @@ app.get('/service/students/:id?', studentsSvc.getStudent);
 app.post('/service/students', studentsSvc.createStudent);
 app.delete('/service/students/:id', studentsSvc.deleteStudent);
 
+// map other requests to an html page by that name
+// hide implementation/technology specific details in the url request.
+// http://server/students --> /public/students.html
+app.get('/:pagename', function(req,res) {
+   console.log('students page');
+   res.sendfile('public/' + req.params.pagename + '.html');
+});
+
 /**
  * Start the application server
  */

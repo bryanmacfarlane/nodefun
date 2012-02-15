@@ -53,7 +53,7 @@ exports.query = function(className, onResults)
     console.log("parse::query");
 
     var options = getParseOptions();
-    options.path = '/1/classes/Student';
+    options.path = '/1/classes/' + className;
 
     console.log(options);
     rest.getJSON(options, onResults);
@@ -70,7 +70,7 @@ exports.retrieve = function(className, itemId, onResults)
     console.log("parse::query");
 
     var options = getParseOptions();
-    options.path = '/1/classes/Student/' + itemId;
+    options.path = '/1/classes/' + className + '/' + itemId;
 
     console.log(options);
     rest.getJSON(options, onResults);
@@ -88,7 +88,7 @@ exports.create = function(className, item, onResults)
 
     var options = getParseOptions();
     options.method = 'POST';
-    options.path = '/1/classes/Student';
+    options.path = '/1/classes/' + className;
 
     console.log(options);
     console.log('data:');
@@ -108,7 +108,7 @@ exports.delete = function(className, itemId, onResults)
 
     var options = getParseOptions();
     options.method = 'DELETE';
-    options.path = '/1/classes/Student/' + itemId;
+    options.path = '/1/classes/' + className + '/' + itemId;
 
     console.log(options);
     console.log('data:');
