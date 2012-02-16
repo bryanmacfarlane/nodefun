@@ -24,7 +24,7 @@ parse.initialize(secrets.getParseAppId(),
 exports.queryStudents = function(req, res)
 {
     console.log('\nstudentsSvc::queryStudents');
-    parse.query("students",
+    parse.query("Student",
         function(result)
         {
             // The service will need the full objects for processing in the service
