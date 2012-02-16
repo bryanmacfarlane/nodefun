@@ -7,6 +7,7 @@
 
 var parse = require('./parse.js');
 var secrets = require("./secrets.js");
+var validator = require("../public/common/validator.js");
 
 /**
  * Initialize the parse API with out secrets.  Separated secrets into separate file for purposes of demo
@@ -52,7 +53,7 @@ exports.getStudent = function(req, res, next)
     if (id)
     {
         console.log('studentSvc::getStudent - ' + id);
-        parse.retrieve("students", id,
+        parse.retrieve("Student", id,
             function(result)
             {
                 console.log("onResult: " + JSON.stringify(result));
@@ -75,17 +76,35 @@ exports.getStudent = function(req, res, next)
 exports.createStudent = function(req, res)
 {
     console.log("\nstudentSvc::createStudent");
-    var student = req.body;
+    var form = req.body;
     console.log("created");
-    console.log('studentSvc::createStudent: ' + JSON.stringify(student));
+    console.log('studentSvc::createStudent form: ' + JSON.stringify(form));
 
-    parse.create("students", student,
-        function(result)
-        {
-            console.log("onResult: " + JSON.stringify(result));
-            res.send(result);
-        });
+    var student = { name: form.name, grade: form.grade, comment: form.comment };
+    console.log(student);
 
+    var issues = validator.validateStudent(student);
+    var hasIssues = false;
+    for (issue in issues)
+    {
+        hasIssues = true;
+    }
+
+    if (hasIssues)
+    {
+        console.log('issues: ' + JSON.stringify(issues));
+        res.statusCode = 500;
+        res.send(issues);
+    }
+    else
+    {
+        parse.create("Student", student,
+            function(result)
+            {
+                console.log("onResult: " + JSON.stringify(result));
+                res.send(result);
+            });
+    }
     // grab individual form fields
     // res.send('firstName is ' + req.body['firstName']);
 };
@@ -103,7 +122,7 @@ exports.deleteStudent = function(req, res)
     var id = req.params.id;
 
     console.log('studentSvc::deleteStudent - ' + id);
-    parse.delete("students", id,
+    parse.delete("Student", id,
         function(result)
         {
             console.log("onResult: " + JSON.stringify(result));

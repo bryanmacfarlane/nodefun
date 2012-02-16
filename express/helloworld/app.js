@@ -50,7 +50,7 @@ app.delete('/service/students/:id', studentsSvc.deleteStudent);
 // hide implementation/technology specific details in the url request.
 // http://server/students --> /public/students.html
 app.get('/:pagename', function(req,res) {
-   console.log('students page');
+   //console.log('students page');
    res.sendfile('public/' + req.params.pagename + '.html');
 });
 

@@ -14,19 +14,55 @@ if (typeof exports == 'undefined')
     var exports = this['validator'] = {};
 }
 
-exports.isNameValid = function(name)
+var issues = {};
+
+var checkHasValue = function(field, val, message)
 {
-    return name == ""? false : true;
+    if (val == "")
+    {
+        var reason = message == undefined ? "'" + field + "' is required" : message;
+        addIssue(field, reason);
+    }
 }
 
-exports.isGradeValid = function(grade)
+var isInSet = function(val, validVals)
 {
     var result = true;
-    var validGrades = ["A", "B", "C", "D", "F"];
-    if (grade == "" || validGrades.indexOf(grade) < 0)
+
+    if (val == "" || validVals.indexOf(val) < 0)
     {
         result = false;
     }
 
     return result;
 }
+
+var addIssue = function(field, issue)
+{
+    issues[field] = issue;
+}
+
+/**
+ * Process student rules
+ * @param student
+ */
+exports.validateStudent = function(student)
+{
+    issues = {};
+
+    // name is required
+    checkHasValue("name", student.name);
+
+    if (!isInSet(student.grade, ["A", "B", "C", "D", "F"]))
+    {
+        addIssue('grade', "grade must be A - D or F");
+    }
+
+    if (student.grade == 'F')
+    {
+        checkHasValue("comment", student.comment, "comment required if grade is an F");
+    }
+    return issues;
+}
+
+

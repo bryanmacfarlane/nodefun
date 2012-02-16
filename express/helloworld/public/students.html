@@ -14,33 +14,67 @@
         $('.error').hide();
 
         $(".button").click(function(){
-            var clientValidation = true;
+            var clientValidation = false;
+            var result = true;
+
+            var student = {
+                            name: $("input#name").val(),
+                            grade: $("input#grade").val(),
+                            comment: $("input#comment").val()
+                          };
 
             if (clientValidation)
             {
                 // form submit - validate
                 $('.error').hide();
 
-                // name
-                var name = $("input#name").val();
-                if (!validator.isNameValid(name))
-                {
-                    $("label#name_error").show();
-                    $("input#name").focus();
-                    return false;
-                }
+                var issues = validator.validateStudent(student);
 
-                // grade
-                var grade = $("input#grade").val();
-                if (!validator.isGradeValid(grade))
+                // loop on issues, flag field, set focus
+                for (var field in issues)
                 {
-                    $("label#grade_error").show();
-                    $("input#grade").focus();
-                    return false;
+                    $("label#" + field + "_error").text(issues[field]);
+                    $("label#" + field + "_error").show();
+                    $("input#" + field).focus();
+                    result = false;
                 }
             }
 
-            alert('posted');
+            if (result)
+            {
+                $.ajax({
+                    type: "POST",
+                    url: "/service/students",
+                    data: student,
+                    success: function() {
+                        $('#form_feedback').html("<div id='message'></div>");
+                        $('#message').html("<h2>Student Saved.</h2>")
+                                .hide()
+                                .fadeIn(1500, function() {
+                                    $('#message');
+                                });
+                    },
+                    error: function(xhr, textStatus, errorThrown) {
+                        var issues = eval("(" + xhr.responseText + ")");
+                        var feedback = "";
+                        for (index in issues)
+                        {
+                            var issue = issues[index];
+                            feedback += issue + "<br/>";
+                        }
+
+                        $('#form_feedback').html("<div id='message'></div>");
+                        $('#message').html("<h2>Error!</h2>")
+                                .append(feedback)
+                                .hide()
+                                .fadeIn(1500, function() {
+                                    $('#message');
+                                });
+                    }
+                });
+            }
+
+            // short circuit post back
             return false;
         });
       })
@@ -51,7 +85,7 @@
 ============================================================= -->
 <!-- post to /service/students -->
 <div id="create_form">
-    <form action="" method="post">
+    <form action="">
         <fieldset>
             <label for="name" id="name_label">Name: </label>
             <input name="name" type="text" id="name" size="30">
@@ -61,10 +95,17 @@
             <input name="grade" type="text" id="grade">
             <label class="error" for="grade" id="grade_error">Grade must be A,B,C,D or F</label>
             <br/>
+            <label for="comment" id="comment_label">Comment: </label>
+            <input name="comment" type="text" id="comment" size="50">
+            <label class="error" for="name" id="comment_error">Comment is required</label>
+            <br/>
             <input type="submit" name="submit" class="button" id="submit_btn" value="Create">
             <input type="reset" name="rest" class="button" id="reset_btn" value="Clear">
         </fieldset>
     </form>
+</div>
+<div id="form_feedback">
+
 </div>
 
 <!--=============================================================

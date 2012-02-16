@@ -91,7 +91,9 @@ exports.create = function(className, item, onResults)
     options.path = '/1/classes/' + className;
 
     console.log(options);
-    console.log('data:');
+    console.log('form data:');
+    console.log(item);
+
     console.log(item);
     rest.postJSON(options, item, onResults);
 };

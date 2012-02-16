@@ -47,7 +47,7 @@ exports.getJSON = function(options, callback)
  * @param options
  * @param callback: callback to pass the results JSON object(s) back
  */
-exports.postJSON = function(options, callback)
+exports.postJSON = function(options, data, callback)
 {
     console.log("rest::postJSON");
 
@@ -63,15 +63,17 @@ exports.postJSON = function(options, callback)
         });
 
         res.on('end', function() {
+            console.log('end: ' + output);
             var obj = eval("(" + output + ")");
             callback(obj);
         });
     });
 
     req.on('error', function(err) {
-        //res.send('error: ' + err.message);
+        console.log('error: ' + err.message);
     });
 
+    req.write(JSON.stringify(data));
     req.end();
 };
 
