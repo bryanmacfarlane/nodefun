@@ -25,7 +25,7 @@ exports.queryStudents = function(req, res)
 {
     console.log('\nstudentsSvc::queryStudents');
     parse.query("Student",
-        function(result)
+        function(statusCode, result)
         {
             // The service will need the full objects for processing in the service
             for (index in result.results)
@@ -34,7 +34,7 @@ exports.queryStudents = function(req, res)
                 console.log('student: ' + student.name);
             }
 
-            //console.log("onResult: " + JSON.stringify(result));
+            res.statusCode = statusCode;
             res.send(result);
         });
 };
@@ -54,9 +54,10 @@ exports.getStudent = function(req, res, next)
     {
         console.log('studentSvc::getStudent - ' + id);
         parse.retrieve("Student", id,
-            function(result)
+            function(statusCode, result)
             {
-                console.log("onResult: " + JSON.stringify(result));
+                console.log("onResult: (" + statusCode + ")" + JSON.stringify(result));
+                res.statusCode = statusCode;
                 res.send(result);
             });
     }
@@ -99,9 +100,10 @@ exports.createStudent = function(req, res)
     else
     {
         parse.create("Student", student,
-            function(result)
+            function(statusCode, result)
             {
-                console.log("onResult: " + JSON.stringify(result));
+                console.log("onResult: (" + statusCode + ")" + JSON.stringify(result));
+                res.statusCode = statusCode;
                 res.send(result);
             });
     }
@@ -123,9 +125,10 @@ exports.deleteStudent = function(req, res)
 
     console.log('studentSvc::deleteStudent - ' + id);
     parse.delete("Student", id,
-        function(result)
+        function(statusCode, result)
         {
-            console.log("onResult: " + JSON.stringify(result));
+            console.log("onResult: (" + statusCode + ")" + JSON.stringify(result));
+            res.statusCode = statusCode;
             res.send(result);
         });
 }

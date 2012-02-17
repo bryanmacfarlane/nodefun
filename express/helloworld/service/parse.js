@@ -82,7 +82,7 @@ exports.retrieve = function(className, itemId, onResults)
  * @param item to create
  * @param onResults: callback function for results
  */
-exports.create = function(className, item, onResults)
+exports.create = function(className, item, onResult)
 {
     console.log("parse::create");
 
@@ -95,7 +95,7 @@ exports.create = function(className, item, onResults)
     console.log(item);
 
     console.log(item);
-    rest.postJSON(options, item, onResults);
+    rest.postJSON(options, item, onResult);
 };
 
 /**

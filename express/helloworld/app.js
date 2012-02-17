@@ -50,12 +50,19 @@ app.delete('/service/students/:id', studentsSvc.deleteStudent);
 // hide implementation/technology specific details in the url request.
 // http://server/students --> /public/students.html
 app.get('/:pagename', function(req,res) {
-   //console.log('students page');
    res.sendfile('public/' + req.params.pagename + '.html');
 });
 
 /**
  * Start the application server
  */
-app.listen(3333);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+var port = 3333;
+app.listen(port);
+if (app.address() != null)
+{
+    console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+}
+else
+{
+    console.log("Failed to start. Ensure another instance is not running and port %d is available.", port);
+}

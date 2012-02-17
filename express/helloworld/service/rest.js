@@ -13,7 +13,7 @@ var https = require("https");
  * @param options: http options object
  * @param callback: callback to pass the results JSON object(s) back
  */
-exports.getJSON = function(options, callback)
+exports.getJSON = function(options, onResult)
 {
     console.log("rest::getJSON");
 
@@ -30,7 +30,7 @@ exports.getJSON = function(options, callback)
 
         res.on('end', function() {
             var obj = eval("(" + output + ")");
-            callback(obj);
+            onResult(res.statusCode, obj);
         });
     });
 
@@ -47,7 +47,7 @@ exports.getJSON = function(options, callback)
  * @param options
  * @param callback: callback to pass the results JSON object(s) back
  */
-exports.postJSON = function(options, data, callback)
+exports.postJSON = function(options, data, onResult)
 {
     console.log("rest::postJSON");
 
@@ -65,7 +65,7 @@ exports.postJSON = function(options, data, callback)
         res.on('end', function() {
             console.log('end: ' + output);
             var obj = eval("(" + output + ")");
-            callback(obj);
+            onResult(res.statusCode, obj);
         });
     });
 
@@ -84,7 +84,7 @@ exports.postJSON = function(options, data, callback)
  * @param itemId: item id to delete
  * @param callback: callback to pass the results JSON object(s) back
  */
-exports.deleteJSON = function(options, itemId, callback)
+exports.deleteJSON = function(options, itemId, onResult)
 {
     console.log("rest::deleteJSON");
 
@@ -101,7 +101,7 @@ exports.deleteJSON = function(options, itemId, callback)
 
         res.on('end', function() {
             var obj = eval("(" + output + ")");
-            callback(obj);
+            onResult(res.statusCode, obj);
         });
     });
 
