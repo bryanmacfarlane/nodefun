@@ -7,6 +7,7 @@ var s = net.createServer(function(socket) {
 
     // stuff away the new client socket connection
     sockets.push(socket);
+    socket.write("Welcome to the worlds hackiest chat server\r\n");
 
     socket.on('data', function(d) {
 
