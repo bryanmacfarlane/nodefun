@@ -9,12 +9,13 @@
 <script src="frameworks/jquery-1.7.1.js"></script>
 <script src="common/validator.js"></script>
 <script>
+
     $(function(){
         // hide error labels on load
         $('.error').hide();
 
         $(".button").click(function(){
-            var clientValidation = true;
+            var clientValidation = false;
             var result = true;
 
             var student = {
