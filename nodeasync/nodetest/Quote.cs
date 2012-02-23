@@ -17,7 +17,7 @@ namespace nodetest
         [DataMember(Name = "author")]
         public string Author { get; set; }
 
-        public static Quote DeSerialize(Stream stream)
+        public static Quote Deserialize(Stream stream)
         {
             var serializer = new DataContractJsonSerializer(typeof(Quote));
 

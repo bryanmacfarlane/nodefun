@@ -18,7 +18,7 @@ namespace nodetest
         {
             HttpWebRequest request = HttpWebRequest.Create(this.Url) as HttpWebRequest;
 
-            return Quote.DeSerialize(request.GetResponse().GetResponseStream());
+            return Quote.Deserialize(request.GetResponse().GetResponseStream());
         }
 
         public Task<Quote> GetQuoteAsync()
@@ -26,7 +26,7 @@ namespace nodetest
             HttpWebRequest request = HttpWebRequest.Create(this.Url) as HttpWebRequest;
 
             return Task.Factory.FromAsync<WebResponse>(request.BeginGetResponse, request.EndGetResponse, null)
-                        .ContinueWith(t => Quote.DeSerialize(((HttpWebResponse)t.Result).GetResponseStream()));
+                        .ContinueWith(t => Quote.Deserialize(((HttpWebResponse)t.Result).GetResponseStream()));
         }
 
         public string Url { get; set; }
