@@ -1,0 +1,129 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Segoe UI, Tahoma, Arial, Verdana;
+    color: #000000;
+}
+
+h2
+{
+    padding-left: 12px;
+    margin-top: 0;
+}
+
+#header
+{
+    background-color: #333;
+    color: #fff;
+    font-size: 140%;
+    padding: 10px;
+    width: 580px;
+}
+
+.col
+{
+    width: 200px;
+    height: 100%;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.board-table
+{
+    display: table;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.board-row
+{
+    display: table-row;
+    padding: 0;
+    margin: 0;
+}
+
+.board-cell
+{
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-container
+{
+    background-color: #eee;
+}
+
+.inprogress-container
+{
+    background-color: #B6FF00;
+}
+
+.done-container
+{
+    background-color: #FFD800
+}
+
+
+.tile
+{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    background-color: #ffc;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgb(200, 200, 200) 0px 0px 6px;
+}
+
+
+#notification
+{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 180px;
+    height: 90px;
+    
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: rgb(200, 200, 200) 0px 0px 6px;
+}
+
+.picture
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #666;
+    width: 32px;
+    height: 32px;
+}
+
+.name
+{
+    position: absolute;
+    top: 6px;
+    left: 50px;
+    font-size: 13px;
+    color: #666;
+}
+
+.message
+{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}

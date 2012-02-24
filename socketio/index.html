@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+
+        <div id="header"></div>
+
+        <div class="board-table">
+            <div class="board-row">
+                <div class="board-cell todo-container"><h2>To do</h2><ul id="todo" class="col"></ul></div>
+                <div class="board-cell inprogress-container"><h2>In progress</h2><ul id="inprogress" class="col"></ul></div>
+                <div class="board-cell done-container"><h2>Done</h2><ul id="done" class="col"></ul></div>
+            </div>
+        </div>
+
+        <div id="notification" style="display: none;">
+            <div class="picture"><img src="hakan.jpg" width="32" height="32" /></div>
+            <div class="name"><b>Hakan</b><br />Raleigh, NC</div>
+            <div class="message">Item 3<br />To do &gt; In Progress</div>
+            <div class="pointer"></div>
+        </div>
+        
+        
+
+        <div id="log" style="clear: both;"></div>
+    </body>
+</html>
