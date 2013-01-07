@@ -6,8 +6,6 @@
  * Date    : 2/7/12
  */
 
-//var temp = [];
-
 var http = require("https");
 
 var options = {
