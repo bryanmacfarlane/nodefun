@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/css/default.css' />
+  </head>
+  <body>
+    <h1>Admin: {{ title }}</h1>
+    <p>Admin: {{ title }}</p>
+  </body>
+</html>
