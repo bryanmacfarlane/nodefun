@@ -6,7 +6,7 @@
  * Date    : 2/7/12
  */
 
-var http = require("https");
+var http = require("http");
 
 var options = {
     host: 'www.google.com',
